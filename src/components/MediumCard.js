@@ -32,7 +32,7 @@ export default function MediumCard(props) {
             }}
             rel="noopener noreferrer"
           >
-            Written by ${props.author}
+            Written by {props.author}
           </a>
         </div>
       </div>
@@ -50,6 +50,8 @@ export default function MediumCard(props) {
         <p className="card-text d-inline-block mb-3">
           {ShortenText(ToText(props.content), 0, 120) + "..."}
         </p>
+        <span className="text-muted">Written by {props.author}</span>
+        <br />
         <span className="text-muted">{publishDate}</span>
       </CardBody>
     </Card>
