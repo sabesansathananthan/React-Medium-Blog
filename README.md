@@ -2,9 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## UI
 
-
-In the project directory, you can run:
-[Image](./docs/Screenshot.png)
+Here is the UI
+![Image](./docs/Screenshot.png)
 
 ## How to setup 
 Read this [documentation](./docs/SETUP.md)
