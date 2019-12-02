@@ -1,0 +1,69 @@
+import React from "react";
+import { Card, CardBody } from "shards-react";
+import ShortenText from "../utils/ShortenText";
+import ToText from "../utils/ToText";
+
+// functional card component to display single item
+export default function MediumCard(props) {
+  var shortMonthName = new Intl.DateTimeFormat("en-US", {
+    month: "short"
+  }).format;
+  let date = new Date(props.pubDate);
+  const publishDate =
+    shortMonthName(date) +
+    " " +
+    date.getDate() +
+    "," +
+    " " +
+    date.getFullYear();
+  return (
+    <Card small className="card-post card-post--1">
+      <div
+        className="card-post__image"
+        style={{ backgroundImage: `url(${props.thumbnail})` }}
+      >
+        <div className="card-post__author d-flex">
+          <a
+            href="https://medium.com/@Sabesan96"
+            target="_blank"
+            className="card-post__author-avatar card-post__author-avatar--small"
+            style={{
+              backgroundImage: `url(${props.avatar})`
+            }}
+            rel="noopener noreferrer"
+          >
+            Written by ${props.author}
+          </a>
+        </div>
+      </div>
+      <CardBody>
+        <h5 className="card-title">
+          <a
+            href={props.link}
+            target="_blank"
+            className="text-fiord-blue"
+            rel="noopener noreferrer"
+          >
+            {ShortenText(props.title, 0, 50)}
+          </a>
+        </h5>
+        <p className="card-text d-inline-block mb-3">
+          {ShortenText(ToText(props.content), 0, 120) + "..."}
+        </p>
+        <span className="text-muted">{publishDate}</span>
+      </CardBody>
+    </Card>
+
+    // <Card small className="card-post card-post--1">
+    //   <div
+    //     className="card-post__image"
+    //     style={{ backgroundImage:  }}
+    //   />
+    //   <CardBody>
+    //     <a href={props.link} target="_blank" rel="noopener noreferrer">
+    //       <p>{props.title}</p>
+    //     </a>
+    //   </CardBody>
+    // </Card>
+  );
+}

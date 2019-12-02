@@ -1,0 +1,10 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.card-post__image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
