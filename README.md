@@ -4,6 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 In the project directory, you can run:
+[Image](./docs/Screenshot.png)
 
 ## How to setup 
-Read this [documentation](./SETUP)
+Read this [documentation](./docs/SETUP.md)
