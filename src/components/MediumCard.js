@@ -24,7 +24,7 @@ export default function MediumCard(props) {
       >
         <div className="card-post__author d-flex">
           <a
-            href="https://medium.com/@Sabesan96"
+            href={props.link}
             target="_blank"
             className="card-post__author-avatar card-post__author-avatar--small"
             style={{
@@ -53,17 +53,5 @@ export default function MediumCard(props) {
         <span className="text-muted">{publishDate}</span>
       </CardBody>
     </Card>
-
-    // <Card small className="card-post card-post--1">
-    //   <div
-    //     className="card-post__image"
-    //     style={{ backgroundImage:  }}
-    //   />
-    //   <CardBody>
-    //     <a href={props.link} target="_blank" rel="noopener noreferrer">
-    //       <p>{props.title}</p>
-    //     </a>
-    //   </CardBody>
-    // </Card>
   );
 }
