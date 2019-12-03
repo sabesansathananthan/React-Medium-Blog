@@ -14,5 +14,8 @@ Read this [documentation](./docs/SETUP.md)📝
 
 Use your medium user name👤 instead of MediumStaff. in [Slider.js](./src/components/Slider.js) 
 
+## How to contribute
+Read this [CONTRIBUTION.md](./docs/CONTRIBUTION.md)
+
 ## Finally 
 Don't forget to give a star⭐️ for this repo ☺️
