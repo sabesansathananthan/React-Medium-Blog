@@ -1,6 +1,6 @@
-import React from "react";
-import Slider from "./Slider";
-import { Col } from "shards-react";
+import React from 'react';
+import Slider from './Slider';
+import { Col } from 'shards-react';
 
 function App() {
   return (

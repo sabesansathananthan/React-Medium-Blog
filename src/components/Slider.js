@@ -1,16 +1,15 @@
-import React from "react";
-import { Col, Row } from "shards-react";
-import MediumCard from "./MediumCard";
+import React from 'react';
+import { Col, Row } from 'shards-react';
+import MediumCard from './MediumCard';
 
 // wrapper for items
 
 class Slider extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { itemRows: [], avatar: "", profileLink: "" };
+    this.state = { itemRows: [], avatar: '', profileLink: '' };
   }
-  mediumURL =
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@MediumStaff";
+  mediumURL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@MediumStaff';
 
   componentDidMount() {
     fetch(this.mediumURL)
@@ -25,8 +24,8 @@ class Slider extends React.Component {
         this.setState({ avatar: avatar, profileLink: profileLink });
         const itemRows = [];
         posts.forEach((item, i) => {
-          item["avatar"] = this.state.avatar; // push avatar inside the json
-          item["link"] = this.state.profileLink; // push profile link inside the JSON
+          item['avatar'] = this.state.avatar; // push avatar inside the json
+          item['link'] = this.state.profileLink; // push profile link inside the JSON
           const row = Math.floor(i / 3);
           if (!itemRows[row]) itemRows[row] = [];
           itemRows[row].push(item);
