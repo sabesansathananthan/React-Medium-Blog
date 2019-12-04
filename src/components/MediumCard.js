@@ -10,6 +10,7 @@ export default function MediumCard(props) {
   }).format;
   let date = new Date(props.pubDate);
   const publishDate = shortMonthName(date) + ' ' + date.getDate() + ',' + ' ' + date.getFullYear();
+  console.log(props);
   return (
     <Card small className="card-post card-post--1">
       <div className="card-post__image" style={{ backgroundImage: `url(${props.thumbnail})` }}>

@@ -4,7 +4,7 @@ import App from './components/App';
 import * as serviceWorker from './helpers/serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'shards-ui/dist/css/shards.min.css';
-import './asserts/shards-dashboards.1.1.0.min.css';
+import './assets/shards-dashboards.1.1.0.min.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
