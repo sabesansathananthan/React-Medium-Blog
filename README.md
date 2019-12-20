@@ -1,6 +1,6 @@
 [![licence](https://img.shields.io/github/license/sabesansathananthan/React-Medium-Blog)](https://github.com/sabesansathananthan/React-Medium-Blog/blob/master/.github/LICENSE)
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/sabesansathananthan/React-Medium-Blog)](https://github.com/sabesansathananthan/React-Medium-Blog)
-[![GitHub repo size](https://img.shields.io/github/repo-size/sabesansathananthan/React-Medium-Blog)](https://github.com/sabesansathananthan/React-Medium-Blog)
+[![GitHub repo size](https://img.shields.io/github/repo-size/sabesansathananthan/React-Medium-Blog?color=ff69b4)](https://github.com/sabesansathananthan/React-Medium-Blog)
 [![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTheSabesan)](https://twitter.com/intent/tweet?text=Wow,%20I%20used%20React-medium-blog.%20That%20is%20excellent.%20Thank%20you%20@TheSabesan)
 
 ## UI
