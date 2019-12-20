@@ -16,7 +16,7 @@ export default function MediumCard(props) {
       <div className="card-post__image" style={{ backgroundImage: `url(${props.thumbnail})` }}>
         <div className="card-post__author d-flex">
           <a
-            href={props.link}
+            href={props.profilelink}
             target="_blank"
             className="card-post__author-avatar card-post__author-avatar--small"
             style={{

@@ -25,12 +25,13 @@ class Slider extends React.Component {
         const itemRows = [];
         posts.forEach((item, i) => {
           item['avatar'] = this.state.avatar; // push avatar inside the json
-          item['link'] = this.state.profileLink; // push profile link inside the JSON
+          item['profilelink'] = this.state.profileLink; // push profile link inside the JSON
           const row = Math.floor(i / 3);
           if (!itemRows[row]) itemRows[row] = [];
           itemRows[row].push(item);
         });
         this.setState({ itemRows: itemRows });
+        console.log(itemRows);
       });
   }
   render() {
