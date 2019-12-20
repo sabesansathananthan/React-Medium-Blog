@@ -1,6 +1,6 @@
 {
   "name": "medium-post",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
     "@commitlint/cli": "^8.2.0",
