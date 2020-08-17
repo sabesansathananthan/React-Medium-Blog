@@ -3,13 +3,12 @@ import { Col, Row } from 'shards-react';
 import MediumCard from './MediumCard';
 
 // wrapper for items
-
 class Slider extends React.Component {
   constructor(props) {
     super(props);
     this.state = { itemRows: [], avatar: '', profileLink: '' };
   }
-  mediumURL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@MediumStaff';
+  mediumURL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@Sabesan96';
 
   componentDidMount() {
     fetch(this.mediumURL)

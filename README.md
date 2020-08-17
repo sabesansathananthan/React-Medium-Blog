@@ -1,3 +1,5 @@
+# React Medium Blog
+
 [![licence](https://img.shields.io/github/license/sabesansathananthan/React-Medium-Blog)](https://github.com/sabesansathananthan/React-Medium-Blog/blob/master/.github/LICENSE)
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/sabesansathananthan/React-Medium-Blog)](https://github.com/sabesansathananthan/React-Medium-Blog)
 [![GitHub repo size](https://img.shields.io/github/repo-size/sabesansathananthan/React-Medium-Blog?color=ff69b4)](https://github.com/sabesansathananthan/React-Medium-Blog)
@@ -8,17 +10,20 @@
 Here is the UI
 ![Image](./docs/Screenshot.png)
 
-## How to setup 
+## How to setup
+
 Read this [documentation](./docs/SETUP.md)📝
 
 ## How to use
 
 `mediumURL = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@MediumStaff";`
 
-Use your medium user name👤 instead of MediumStaff. in [Slider.js](./src/components/Slider.js) 
+Use your medium user name👤 instead of MediumStaff. in [Slider.js](./src/components/Slider.js)
 
 ## How to contribute
+
 Read this [CONTRIBUTION.md](./docs/CONTRIBUTION.md)
 
-## Finally 
+## Finally
+
 Don't forget to give a star⭐️ for this repo ☺️
