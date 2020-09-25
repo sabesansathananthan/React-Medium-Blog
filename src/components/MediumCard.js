@@ -6,11 +6,12 @@ import { faUser, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // functional card component to display single item
 export default function MediumCard(props) {
-  var shortMonthName = new Intl.DateTimeFormat('en-US', {
-    month: 'short'
-  }).format;
-  let date = new Date(props.pubDate);
-  const publishDate = shortMonthName(date) + ' ' + date.getDate() + ',' + ' ' + date.getFullYear();
+  const monthShortname = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const splitDate = props.pubDate.split(' ');
+  const date = splitDate[0];
+  const splitMonth = date.split('-');
+  const finalDate = monthShortname[Number(splitMonth[1] - 1)] + ' ' + splitMonth[2] + ',' + ' ' + splitMonth[0];
+
   return (
     <Card small className="card-post card-post--1">
       <div className="card-post__image" style={{ backgroundImage: `url(${props.thumbnail})` }}>
@@ -42,7 +43,7 @@ export default function MediumCard(props) {
         <br />
 
         <span className="text-muted">
-          <FontAwesomeIcon icon={faCalendarAlt} /> {publishDate}
+          <FontAwesomeIcon icon={faCalendarAlt} /> {finalDate}
         </span>
       </CardBody>
     </Card>
