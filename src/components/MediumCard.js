@@ -32,7 +32,7 @@ export default function MediumCard(props) {
       <CardBody>
         <h5 className="card-title">
           <a href={props.link} target="_blank" className="text-fiord-blue" rel="noopener noreferrer">
-            {ShortenText(props.title, 0, 50)}
+            {ShortenText(props.title, 0, 100)}
           </a>
         </h5>
         <p className="card-text d-inline-block mb-3">{ShortenText(ToText(props.content), 0, 120) + '...'}</p>

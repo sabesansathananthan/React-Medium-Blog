@@ -1,4 +1,4 @@
-# sabesansathananthan.github.io
+# React Medium Blog
 
 ![GitHub Flow PR Image](http://i.imgur.com/9flS3QU.png)
 
@@ -8,20 +8,20 @@ Please provide the following information where possible to help the pull request
 
 ## Relevant Project Issue Numbers :hash:
 
-*Add any related issue numbers from the GitHub project. Append the `#` symbol before issue numbers.*
+_Add any related issue numbers from the GitHub project. Append the `#` symbol before issue numbers._
 
->e.g. #58
+> e.g. #58
 
 ## Involved Project Members :bust_in_silhouette:
 
-*Tag any GitHub usernames involved or directly responsible for reviewing the proposed changes. Append the `@` symbol before usernames.*
+_Tag any GitHub usernames involved or directly responsible for reviewing the proposed changes. Append the `@` symbol before usernames._
 
->e.g @Charlotteis
- 
+> e.g @Charlotteis
+
 ## An Explanation of Your Changes :speech_balloon:
 
-*Your explanation goes here!*
+_Your explanation goes here!_
 
 ## Any Screenshots of Your Changes :camera:
- 
-*Your screenshots go here! Use Markdown Syntax to embed images.*
+
+_Your screenshots go here! Use Markdown Syntax to embed images._
