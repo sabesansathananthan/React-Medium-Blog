@@ -4,6 +4,7 @@ import ShortenText from '../utils/ShortenText';
 import ToText from '../utils/ToText';
 import { faUser, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Badge } from 'shards-react';
 // functional card component to display single item
 export default function MediumCard(props) {
   const monthShortname = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -41,10 +42,18 @@ export default function MediumCard(props) {
           <FontAwesomeIcon icon={faUser} /> {props.author}
         </span>
         <br />
-
         <span className="text-muted">
           <FontAwesomeIcon icon={faCalendarAlt} /> {finalDate}
         </span>
+        <br />
+        <br />
+        <div>
+          {props.categories.map(category => (
+            <Badge pill className={'mr-1'}>
+              {category}
+            </Badge>
+          ))}
+        </div>
       </CardBody>
     </Card>
   );
