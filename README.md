@@ -22,6 +22,7 @@ Aim of this project is embed Medium as a blog on your React website.
       <img alt="Framework: React" src="https://badges.aleen42.com/src/react.svg" />
     </a>
 </p>
+
 ## 🛠️ Built with
 
 - [React JS](https://reactjs.org/) - Front-End JavaScript library
