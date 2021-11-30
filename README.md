@@ -15,8 +15,13 @@ Aim of this project is embed Medium as a blog on your React website.
     </a><a href="https://twitter.com/intent/tweet?text=Wow,%20I%20used%20React-medium-blog.%20That%20is%20excellent.%20Thank%20you%20@TheSabesan">
       <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTheSabesan" />
     </a>
+      <a href="https://github.com/sabesansathananthan/React-Medium-Blog/actions/workflows/firebase.yml">
+      <img alt="Firebase CI" src="https://github.com/sabesansathananthan/React-Medium-Blog/actions/workflows/firebase.yml/badge.svg" />
+    </a>
+      <a href="https://github.com/sabesansathananthan/React-Medium-Blog">
+      <img alt="Framework: React" src="https://badges.aleen42.com/src/react.svg" />
+    </a>
 </p>
-
 ## 🛠️ Built with
 
 - [React JS](https://reactjs.org/) - Front-End JavaScript library
