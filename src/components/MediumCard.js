@@ -5,6 +5,7 @@ import ToText from '../utils/ToText';
 import { faUser, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Badge } from 'shards-react';
+import colors from '../utils/colors.json';
 // functional card component to display single item
 export default function MediumCard(props) {
   const monthShortname = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
@@ -16,9 +17,14 @@ export default function MediumCard(props) {
   return (
     <Card small className="card-post card-post--1">
       <div className="card-post__image" style={{ backgroundImage: `url(${props.thumbnail})` }}>
+        <div className={'card-post__category'}>
+          <Badge pill className={'mr-1'} style={{ backgroundColor: colors[props.tagNo] }}>
+            {props.tag}
+          </Badge>
+        </div>
         <div className="card-post__author d-flex">
           <a
-            href={props.profilelink}
+            href={props.profileLink}
             target="_blank"
             className="card-post__author-avatar card-post__author-avatar--small"
             style={{
@@ -47,13 +53,6 @@ export default function MediumCard(props) {
         </span>
         <br />
         <br />
-        <div>
-          {props.categories.map(category => (
-            <Badge pill className={'mr-1'}>
-              {category}
-            </Badge>
-          ))}
-        </div>
       </CardBody>
     </Card>
   );
