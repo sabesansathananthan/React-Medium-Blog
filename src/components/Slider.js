@@ -20,14 +20,17 @@ function Slider() {
         const profile = data.feed.link;
         const items = data.items; //This is an array with the content. No feed, no info about author etc..
         const posts = items.filter(item => item.categories.length > 0);
+
         setAvatar(avatarImg);
         setProfileLink(profile);
+
         const blogs = [];
         posts.forEach((item, i) => {
           item['avatar'] = avatarImg; // push avatar inside the json
           item['profileLink'] = profile; // push profile link inside the JSON
           blogs.push(item);
         });
+
         const tagArrays = blogs.map(item => {
           return item.categories;
         });
@@ -44,24 +47,49 @@ function Slider() {
           return allTagsWithCount[b] - allTagsWithCount[a];
         });
 
-        console.log(sortedTagsArray);
-
+        // console.log(sortedTagsArray);
         const tagArticle = [];
         let removedBlogs = blogs;
         for (let i = 0; i < sortedTagsArray.length; ++i) {
           const blogsWithTag = removedBlogs.filter(blog => blog.categories.includes(sortedTagsArray[i])); //filter
+
           removedBlogs = removedBlogs.filter(blog => blogsWithTag.indexOf(blog) == -1); //exclude
+
           if (blogsWithTag.length > 0) {
             blogsWithTag.forEach(item => {
               item[`tag`] = sortedTagsArray[i];
-              item['tagNo'] = i + 1;
-              const row = Math.floor(i / 3);
-              if (!tagArticle[row]) tagArticle[row] = [];
-              tagArticle[row].push(item);
+              tagArticle.push(item);
             });
           }
         }
-        setItemRows(tagArticle);
+
+        const filteredTagArrays = tagArticle.map(item => {
+          return item.tag;
+        });
+
+        const filteredAllTagsWithCount = filteredTagArrays.reduce((tagsWithCount, currentTag) => {
+          tagsWithCount[currentTag] = (tagsWithCount[currentTag] || 0) + 1; //increment the number of counts of a tag
+          return tagsWithCount;
+        }, {});
+
+        //sort the tag(key) according its count
+        const filteredSortedTagsArray = Object.keys(filteredAllTagsWithCount).sort(function(a, b) {
+          return filteredAllTagsWithCount[b] - filteredAllTagsWithCount[a];
+        });
+
+        tagArticle.forEach(item => {
+          item.tagNo = filteredSortedTagsArray.indexOf(item.tag) + 1;
+        });
+
+        const tagArticleWithRow = [];
+
+        tagArticle.forEach((item, i) => {
+          const row = Math.floor(i / 3);
+          if (!tagArticleWithRow[row]) tagArticleWithRow[row] = [];
+          tagArticleWithRow[row].push(item);
+        });
+
+        setItemRows(tagArticleWithRow);
         setLoading(true);
       });
   }, []);
