@@ -9,7 +9,7 @@ function Slider() {
   const [profileLink, setProfileLink] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const mediumURL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@rcvaram';
+  const mediumURL = 'https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@sabesan96';
 
   useEffect(() => {
     fetch(mediumURL)
