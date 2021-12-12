@@ -56,7 +56,7 @@ export default function MediumCard(props) {
         <br />
         <span className="text-muted">
           <i
-            class="fad fa-calendar-alt"
+            className="fad fa-calendar-alt"
             style={{ fontSize: '20px', '--fa-primary-color': 'red', '--fa-secondary-color': 'dimgray' }}
           ></i>{' '}
           {finalDate}

@@ -6,7 +6,11 @@ Aim of this project is embed Medium as a blog on your React website.
 <img alt="UI" src="./docs/Screenshot.png"  align='center'/>
 
 <p align="center">
-<a href="https://github.com/sabesansathananthan/React-Medium-Blog/blob/master/.github/LICENSE">
+    <a href="https://github.com/sabesansathananthan/React-Medium-Blog/actions/workflows/firebase.yml">
+      <img alt="Firebase CI" src="https://github.com/sabesansathananthan/React-Medium-Blog/actions/workflows/firebase.yml/badge.svg" />
+    </a><a href="https://github.com/sabesansathananthan/React-Medium-Blog">
+      <img alt="Framework: React" src="https://badges.aleen42.com/src/react.svg" />
+    </a><a href="https://github.com/sabesansathananthan/React-Medium-Blog/blob/master/.github/LICENSE">
       <img alt="licence" src="https://img.shields.io/github/license/sabesansathananthan/React-Medium-Blog" />
     </a><a href="https://github.com/sabesansathananthan/React-Medium-Blog">
       <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/sabesansathananthan/React-Medium-Blog" />
@@ -15,12 +19,7 @@ Aim of this project is embed Medium as a blog on your React website.
     </a><a href="https://twitter.com/intent/tweet?text=Wow,%20I%20used%20React-medium-blog.%20That%20is%20excellent.%20Thank%20you%20@TheSabesan">
       <img alt="Twitter URL" src="https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2FTheSabesan" />
     </a>
-      <a href="https://github.com/sabesansathananthan/React-Medium-Blog/actions/workflows/firebase.yml">
-      <img alt="Firebase CI" src="https://github.com/sabesansathananthan/React-Medium-Blog/actions/workflows/firebase.yml/badge.svg" />
-    </a>
-      <a href="https://github.com/sabesansathananthan/React-Medium-Blog">
-      <img alt="Framework: React" src="https://badges.aleen42.com/src/react.svg" />
-    </a>
+      
 </p>
 
 ## 🛠️ Built with
