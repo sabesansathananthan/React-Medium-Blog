@@ -1,10 +1,9 @@
 import React from 'react';
-import { Card, CardBody } from 'shards-react';
-import ShortenText from '../utils/ShortenText';
-import ToText from '../utils/ToText';
+import { Card, CardBody, Badge } from 'shards-react';
 import { faUser, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Badge } from 'shards-react';
+import ShortenText from '../utils/ShortenText';
+import ToText from '../utils/ToText';
 import colors from '../utils/colors.json';
 // functional card component to display single item
 export default function MediumCard(props) {
