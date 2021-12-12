@@ -1,7 +1,5 @@
 import React from 'react';
 import { Card, CardBody, Badge } from 'shards-react';
-import { faUser, faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ShortenText from '../utils/ShortenText';
 import ToText from '../utils/ToText';
 import colors from '../utils/colors.json';
@@ -44,11 +42,24 @@ export default function MediumCard(props) {
         <p className="card-text d-inline-block mb-3">{ShortenText(ToText(props.content), 0, 120) + '...'}</p>
         <br />
         <span className="text-dark">
-          <FontAwesomeIcon icon={faUser} /> {props.author}
+          <i
+            className="fad fa-user-edit"
+            style={{
+              fontSize: '20px',
+              '--fa-primary-color': 'mediumpurple',
+              '--fa-secondary-color': 'orange',
+              '--fa-secondary-opacity': '1.0'
+            }}
+          ></i>{' '}
+          {props.author}
         </span>
         <br />
         <span className="text-muted">
-          <FontAwesomeIcon icon={faCalendarAlt} /> {finalDate}
+          <i
+            class="fad fa-calendar-alt"
+            style={{ fontSize: '20px', '--fa-primary-color': 'red', '--fa-secondary-color': 'dimgray' }}
+          ></i>{' '}
+          {finalDate}
         </span>
         <br />
         <br />
