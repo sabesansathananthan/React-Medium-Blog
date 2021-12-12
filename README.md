@@ -79,6 +79,14 @@ To setup the app for development on your local machine, please follow the instru
    ```
 
 5. Visit <http://localhost:3000>
+   <br />
+
+## How does the category tag work?
+
+**How can we choose a particular category tag among a medium post’s 5 category tags?**
+
+I proposed a method for that. In a particular medium post which category tag was tagged the highest time in last 10 medium posts is suitable for that post.
+<br />
 
 ## [Live Demo](https://react-medium-blog.web.app/)
 
