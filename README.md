@@ -100,6 +100,7 @@ Don't forget to give a star :star: for this repo :slightly_smiling_face:
 
 - [Material-UI-Medium-Blog](https://github.com/sabesansathananthan/material-ui-medium-blog)
 - [React-Dev.to-Blog](https://github.com/sabesansathananthan/react-dev.to-blog)
+- [react-medium-blog-v2](https://github.com/sabesansathananthan/react-medium-blog-v2)
 
 ## 📄 License
 
